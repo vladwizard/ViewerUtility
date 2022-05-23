@@ -1,0 +1,126 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 1.8vw;
+}
+
+.viewerUtility{
+  width: auto;
+  display: flex;
+  height: 100vh
+
+}
+.preferensArea{
+  z-index: 100;
+  min-height: 100%;
+  width: 30%;
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preferensSubArea{
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.preferensParagraph{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 11vh;
+  width: 100%;
+
+}
+.preferensTitle{
+  text-align: center;
+}
+.displayArea{
+  z-index: 0;
+
+  width: 70%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.TshirtArea {
+  position: fixed;
+  height: 700px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 0px 1fr;
+  grid-template-rows: 0px 1fr;
+}
+.printArea{
+  position: relative;
+  left:50%;
+  transform:translate(-50%,0%);
+  margin-top: 13%;
+  height: 530px;
+  width: 325px;
+  overflow:hidden;
+
+}
+.printImage{
+  position: relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:325px;
+  object-fit:cover;
+}
+.preferensArea{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+.cellImageTable{
+  width: 28%;
+  height: 14vh;
+  background-size: cover;
+  background-position: center;
+  border-width: 0.1rem;
+  border-radius: 0.3rem;
+  margin: 2%;
+}
+.chooseImageArea{
+  box-shadow: 0.2rem 0.2rem 0.2rem darkgray;
+  padding: 3%;
+  width: 80%;
+  height: max-content;
+  background: khaki;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.cellImageTable:hover{
+  opacity: 0.8;
+}
+.slider{
+  appearance: none;
+  width: 50vh;
+  height: 10%;
+  background: #d3d3d3;
+  opacity: 0.8;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: #4CAF50;
+  cursor: pointer;
+}
+.slider::-webkit-slider-thumb:hover {
+  opacity: 1;
+}
